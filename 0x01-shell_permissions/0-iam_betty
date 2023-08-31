@@ -1,2 +1,2 @@
 #!/bin/bash
-chown <betty> <fil>
+sudo chown betty <any_file>
