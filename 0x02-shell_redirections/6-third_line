@@ -1,0 +1,2 @@
+#!/bin/bash
+'NR==3{ print; exit }' iacta
