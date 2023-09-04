@@ -1,2 +1,2 @@
-5-firstlines
+#!/bin/bash
 head /etc/passwd
