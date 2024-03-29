@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 # Adds IP address to /etc/hosts
-cp /etc/hosts ~/hosts.new
-sed -i 's/127.0.0.1/127.0.0.2/' ~/hosts.new
-sed -i '2i8.8.8.8 facebook.com' ~/hosts.new
-cp -f ~/hosts.new /etc/hosts
+sudo cp /etc/hosts /etc/hosts.backup   # Backup the original hosts file
+sudo sed -i 's/127.0.0.1/127.0.0.2/' /etc/hosts  # Replace 127.0.0.1 with 127.0.0.2
+sudo sed -i '2i8.8.8.8 facebook.com' /etc/hosts  # Add an entry for facebook.com
